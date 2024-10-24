@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_tab"
+    android:orientation="vertical"
+    tools:context=".AdminManager">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="26dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/adminanalyze"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="76dp" />
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:rowCount="3"
+        app:useDefaultMargins="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_300"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/brawler"
+                    android:text="@string/num_products"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/numSel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@color/pink_300"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:textSize="8sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/blue_700"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="15dp"
+            android:layout_marginLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/brawler"
+                    android:text="@string/sum_prices"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/sumPrices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@color/blue_700"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:textSize="8sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/blue_500"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/brawler"
+                    android:text="@string/num_sellers"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/numSellers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textSize="8sp"
+                    android:background="@color/blue_500"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/pink_500"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="17dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/best_seller"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/brawler"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/BestSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:ems="10"
+                    android:padding="8dp"
+                    android:textSize="8sp"
+                    android:background="@color/pink_500"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sellerlist_adminManager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="20dp">
+
+        <LinearLayout
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brawler"
+            android:text="@string/seller_list"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prolist_adminManager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/blue_sky"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/product_list"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/brawler"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+</RelativeLayout>
